@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: JetBrains Mono;
+    display: flex;
+    flex-direction: column;
+    padding: 170px 16px 63px 16px;
+    background-color: #08070B;
+}
+
+h1{
+    color: #817D92;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.12px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.firstDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #E6E5EA;
+    background-color: #24232C;
+    padding: 17px 15px 15px 16px;
+}
+
+.firstDiv > p{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.68px;
+}
+
+.firstDiv > button{
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.contenaire{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #E6E5EA;
+    background-color: #24232C;
+    padding: 16px;
+}
+
+.password{
+    width: 50px;
+}
+
+.firstDivContenaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstDivContenaire > h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.12px;
+}
+
+.firstDivContenaire > p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.68px;
+    color: #A4FFAF;
+
+}
+
+input[type="checkbox"]{
+    accent-color: #A4FFAF; 
+    height: 20px;
+    width: 20px;   
+}
+
+.checkboxDiv{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+input[type="checkbox"]:not(:checked) {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: solid 2px #E6E5EA;
+}
+
+.inputRange{
+    margin-top: 8px;
+    accent-color: #A4FFAF;
+    margin-bottom: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.12px;
+}
+
+.strength{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #18171F;
+    padding: 14px 16px;
+}
+
+.btnDiff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.str{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.12px;
+    color: #817D92;
+}
+
+.medium{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.76px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn > button{
+    width: 10px;
+    height: 28px;
+}
+
+.btnActiver{
+    background-color: #F8CD65;
+    border-style: none;
+}
+
+.btnDesactiver{
+    border: solid 2px #E6E5EA;
+    background-color: transparent;
+}
+
+.submit{
+    padding: 16px 103px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #A4FFAF;
+    border-style: none;
+}
+
+.btnDiffNotActive{
+    background-color: transparent;
+    border: solid 2px #E6E5EA;
+}
+
+.btnDiffActiveStrong{
+    background-color: #A4FFAF;
+    border-style: none;
+}
+
+.btnDiffActiveMedium{
+    background-color: #F8CD65;
+    border-style: none;
+}
+
+.btnDiffActiveWeak{
+    background-color: #fb7c58;
+    border-style: none;
+}
+
+.btnDiffActiveToWeak{
+    background-color: #f64a4a;
+    border-style: none;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        padding: 133px 114px 139px 114px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        padding: 196px 450px 0 450px;
+    }
+}

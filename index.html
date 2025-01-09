@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Password Generator</h1>
+    <section>
+        <div class="firstDiv">
+            <p id="password">PTx1f5DaFX</p>
+            <button><img src="assets/fa-regular_copy.png" alt="copy" id="copy"></button>
+        </div>
+
+        <div class="contenaire">
+            <div class="firstDivContenaire">
+                <h2>Character Length</h2>
+                <p class="valeurRange">15</p>
+            </div>
+            <input type="range" value="15" max="30" min="0" class="inputRange" id="range">
+            <form action="get">
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="uppercase" id="uppercase" checked>
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="lowercase" id="lowercase" checked>
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="symbols" id="symbols" >
+                    <label for="symbols">Include Symbols</label>
+                </div>
+                <div class="strength">
+                    <p class="str">STRENGTH</p>
+                    <div class="btnDiff">
+                        <p class="medium" id="diff">MEDIUM</p>
+                        <div class="btn">
+                            <button class="btnDesactiver" id="btnDiff1"></button>
+                            <button class="btnDesactiver" id="btnDiff2"></button>
+                            <button class="btnDesactiver" id="btnDiff3"></button>
+                            <button class="btnDesactiver" id="btnDiff4"></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="submit" >GENERATE <img src="assets/bx_arrow-to-left.png" alt=""></button>
+            </form>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
